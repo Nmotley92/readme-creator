@@ -35,3 +35,64 @@ function renderLicenseBadge(license) {
 }
 
 //  Creates link for TOC
+function renderLicenseLink(license) {
+  if(license!=='NONE'){return `[License](#license)`}
+  return '';
+}
+
+// creates the license section
+function renderLicenseSection(license) {
+  
+  if(license!=='NONE'){return `##License\n
+  This product is licensed under- <a href="${link}">${license}</a>`}
+  return '';
+}
+
+//  cretes the markdown for the readme
+function generateMarkdown(data) {
+  createLicenseLinkUrl(data.license);
+
+  return `# ${data.title}
+
+  ${renderLicenseBadge(data.license)}
+
+  ## Description 
+  ${data.description}
+
+  ## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributions](#contributions)
+- [Tests](#tests)
+- ${renderLicenseLink(data.license)}
+
+
+## Installation
+${data.install}
+
+## Usage 
+${data.usage}
+
+## Contributions
+
+${data.contributing}
+  
+## Tests
+
+${data.test}
+
+${renderLicenseSection(data.license)}
+
+## Questions 
+
+If you have any questions please contact me\n
+
+Github: [${data.github}](https://github.com/${data.github})\n
+
+Email: ${data.email}
+
+`;
+}
+
+module.exports = generateMarkdown;
