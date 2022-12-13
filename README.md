@@ -46,14 +46,14 @@ To run this project
 node index.js
 ```
 ## Visuals
+[readme-creator.webm](https://user-images.githubusercontent.com/114119193/207435897-438f8d75-d633-49c7-83aa-cf68594de4ae.webm)
 
 
 
 
-<br clear="left"/>
 ## Tech Stack
-<img src="https://img.shields.io/badge/Javascript-05122A?style=flat&logo=javascript" alt="javascript Badge" height="25">&nbsp;
-<img src="https://img.shields.io/badge/Node.js-05122A?style=flat&logo=node.js" alt="Node.js" height="25">&nbsp;
+<img src="https://img.shields.io/badge/Javascript-05122A?style=flat&logo=javascript" alt="javascript Badge" height="25">
+<img src="https://img.shields.io/badge/Node.js-05122A?style=flat&logo=node.js" alt="Node.js" height="25">
 
 
 ## Contact
