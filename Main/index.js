@@ -57,7 +57,7 @@ const questions = [
     {
         type: 'input',
         name: 'contributing',
-        message: 'How can others contribute?.',
+        message: 'How can others contribute?',
         validate: (Answer) => {
             if (Answer) {
                 return true;
@@ -69,7 +69,7 @@ const questions = [
     {
         type: 'input',
         name: 'test',
-        message: 'What commands can be run for tests?.',
+        message: 'What commands can be run for tests?',
         validate: (Answer) => {
             if (Answer) {
                 return true;
